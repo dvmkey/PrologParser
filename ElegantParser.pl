@@ -25,7 +25,8 @@ arguement([]) --> [].
 arguement(X) --> [X].
 arguement([X|T]) --> [X], arguement(T).
 
-commands(["LOAD"]).
+commands(["COPY", "LOAD", "STORE", "CBRANCH", "BRANCH", "BRANCHIND", "CALL", "CALLIND", "RETURN",
+"PIECE", "SUBPIECE", "INT2FLOAT", "FLOAT2FLOAT", "TRUNC", "POPCOUNT", "CALLOTHER"]).
 is_command(String) :-
     commands(CommandList),
     member(String, CommandList).
