@@ -1,7 +1,7 @@
 destination = LOAD source, source,
-POTATOCANON source, source
+CBRANCH source, source
 BREAK source, source
 
 destination = LOAD source, source,
-POTATOCANON source, source
+CBRANCH source, source
 BREAK source, source
