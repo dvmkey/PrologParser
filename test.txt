@@ -1,1 +1,7 @@
-destination = LOAD source, source, source, source, source, source, source, source, source, source
+destination = LOAD source, source,
+POTATOCANON source, source
+BREAK source, source
+
+destination = LOAD source, source,
+POTATOCANON source, source
+BREAK source, source
