@@ -1,16 +1,16 @@
 % DCG for ARG = CMD ARGS
-instruction([X, [Y|Z]]) --> arguement(Y), ["="], command(X), arguement(Z).
+instruction([X, [Y|Z]]) --> argument(Y), ["="], command(X), argument(Z).
 
 % DCG for CMD ARGS
-instruction([X, Y]) --> command(X), arguement(Y).
+instruction([X, Y]) --> command(X), argument(Y).
 
 % DCG for CMD
 command([X]) --> [X].
 
 %DCGs for Argument lists
-arguement([]) --> [].
-arguement(X) --> [X].
-arguement([X|T]) --> [X], arguement(T).
+argument([]) --> [].
+argument(X) --> [X].
+argument([X|T]) --> [X], argument(T).
 
 % Run this command to parse the file.  Pass it the name of your AST.
 parse_file(FileName, AST) :-
